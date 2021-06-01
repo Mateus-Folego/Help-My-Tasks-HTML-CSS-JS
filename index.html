@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon.PNG" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Help My Tasks | Task manager</title>
+</head>
+<body>
+    
+    <div class="titleContainer">
+        <section class="explainSection">
+            <header id="header">
+                <h1 id="title"> Welcome to Help My Tasks!</h1>
+            </header> 
+            <div id="explain">    
+                <h2 id="subtitle">Put your tasks in this field and save them when you are finished. You can delete your tasks by clicking on the <i class="fa fa-trash"></i> button. You can also delete them all by clicking on the "Delete All" button.</h2>
+                    <h3 id="enjoy">Enjoy Help My Task and make your tasks simpler :)!</h3>
+            </div>       
+        </section>
+    </div>
+    <section>
+        <div class="tasksContainer">
+                <div class="taskContainercont">
+                    <h2 class="here">ADD YOUR TASK:</h2>
+                        <div class="topCont">
+                            <input id="inputStyle" type="text" name="TASK" placeholder="Task name">
+                                        <button onclick= creatMyTask() class="addTasks"><i class="fa fa-plus"></i></button><br>
+                        </div> 
+                            <div id="tasksList">
+                            </div>    
+                                <footer>
+                                        <button onclick="cleanAll()" class="clearAll">DELETE ALL</button>
+                                </footer>
+        </div>
+                </div>
+    </section>
+    <script src="./JavaScript/script.js"></script>
+</body>
+</html>

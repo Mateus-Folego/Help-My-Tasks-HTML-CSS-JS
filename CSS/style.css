@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+body{
+
+    background-color:white;
+}
+
+.titleContainer{
+    position: relative;
+    background-image: url(../assets/tasks4.JPEG);
+    background-size: cover;
+    overflow: hidden;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.explainSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#ffffff96; 
+    width: 90%;
+    padding: 17px; 
+}
+
+#title{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 13px;
+}
+
+#subtitle{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #355ece;
+}
+
+#enjoy{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+
+.tasksContainer{
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 100vh;  
+    background-color:#ededed ; 
+}
+
+
+.taskContainercont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color:#ededed;
+    border-radius: 10px;
+    padding: 55px; 
+}
+
+
+.topCont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+.here{
+    padding-bottom: 8px;
+    color:#4b6fd3;
+    text-align: left;
+}
+
+.topCont input{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #4b6fd3;
+    border-radius: 4px;
+    /* OUTLINE= Tira a marcação ao clicar no input */
+    outline: none;
+    background-color: #ededed;
+    color: #4b6fd3;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 18px;
+    
+}
+
+button.addTasks{
+    padding: 12px;
+    border: 2px solid #4b6fd3;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#4b6fd3;
+    outline: none;
+    cursor: pointer;
+
+}
+
+input::placeholder{
+    color:#4b6fd3;
+
+}
+
+button.clearAll{
+    padding: 12px;
+    border: 2px solid #4b6fd3;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#4b6fd3;
+    cursor: pointer;
+    float: right;
+}
+
+button.action{
+    padding: 12px;
+    border: 2px solid #4b6fd3;
+    border-radius: 10px;
+    color: #4b6fd3;
+    font-weight: bold;
+    background-color:#ffffff;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.addTasks:hover, .clearAll:hover{
+    background-color: #6184e2;
+}
+
+button.action:hover {
+    color:#ffffff;
+    background-color:#4b6fd3;
+    border: 2px solid #ffffff;
+}
+
+.blue{
+    color: #4b6fd3;
+    font-size: 21px;
+}
+
+#tasksPending{
+    border: 2px solid #4b6fd3;
+    background-color:#ffffff;
+    color:#4b6fd3;
+}
+
+#tasksList{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+    
+}
+
+li{
+    padding: 10px;
+    background-color: #4b6fd3;
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-between;
+    /* Deixar todos na mesma linha */
+    align-items: center;
+    margin-top: 20px;
+}
