@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif; 
+}
+
+button, input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body{
@@ -51,7 +56,6 @@ body{
     font-weight: bolder;
 }
 
-
 .tasksContainer{
     position: relative;
     width: 50%;
@@ -59,7 +63,6 @@ body{
     height: 100vh;  
     background-color:#ededed ; 
 }
-
 
 .taskContainercont{
     position: absolute;
@@ -75,14 +78,11 @@ body{
     padding: 55px; 
 }
 
-
 .topCont{
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
-
 
 .here{
     padding-bottom: 8px;
@@ -117,12 +117,18 @@ button.addTasks{
     background-color:#4b6fd3;
     outline: none;
     cursor: pointer;
-
 }
 
 input::placeholder{
     color:#4b6fd3;
+}
 
+#nameTask{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 78%;
+    white-space: nowrap;
 }
 
 button.clearAll{
@@ -171,12 +177,10 @@ button.action:hover {
     color:#4b6fd3;
 }
 
-#tasksList{
+ #tasksList{
     list-style-type: none;
-    padding: 0;
-    margin-bottom: 15px;
-    
-}
+    margin-bottom: 10px;
+} 
 
 li{
     padding: 10px;
@@ -184,8 +188,73 @@ li{
     color: #ffffff;
     border-radius: 8px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     /* Deixar todos na mesma linha */
     align-items: center;
-    margin-top: 20px;
+    margin-top: 20px; 
+}
+
+@media(max-width: 1092px){
+    #title{
+        font-size: 32px;
+    }
+
+    #subtitle{
+        font-size: 15px;
+    }
+
+    #enjoy{
+        font-size: 17px;
+    }
+
+    .taskContainercont{
+        padding:40px;
+    }
+}
+
+@media(max-width: 873px){
+    .titleContainer{
+        width: 100%;
+        float:none;
+    }
+
+    .tasksContainer{
+        width: 100%;
+        float:none;
+    }
+
+    #title{
+        font-size: 34px;
+    }
+
+    #subtitle{
+        font-size: 16px;
+    }
+
+    #enjoy{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 439px){
+    .explainSection{
+    width: 85%;
+    padding: 14px;
+    }
+
+    #title{
+        font-size: 30px;
+    }
+
+    #subtitle{
+        font-size: 13px;
+    }
+
+    #enjoy{
+        font-size: 17px;
+    }
+
+    .taskContainercont{
+        padding: 28px;
+    }
 }
