@@ -166,17 +166,6 @@ button.action:hover {
     border: 2px solid #ffffff;
 }
 
-.blue{
-    color: #4b6fd3;
-    font-size: 21px;
-}
-
-#tasksPending{
-    border: 2px solid #4b6fd3;
-    background-color:#ffffff;
-    color:#4b6fd3;
-}
-
  #tasksList{
     list-style-type: none;
     margin-bottom: 10px;
