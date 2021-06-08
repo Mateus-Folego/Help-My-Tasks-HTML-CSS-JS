@@ -1,13 +1,12 @@
 let tasks = [];
 
 function idGenerator(){
-
     return Math.floor(Math.random() * 9000);
 };
 
 function creatMyTask(){
     let taskName = document.getElementById('inputStyle').value;
-    
+
     let task = {
         id: idGenerator(),
         name: taskName
@@ -23,13 +22,12 @@ function creatMyTask(){
     };
 };
 
-{const inputStyle = document.getElementById('inputStyle');
+let inputStyle = document.getElementById('inputStyle');
 inputStyle.addEventListener('keydown', function(event){
     if (event.key == "Enter") {
         creatMyTask();
     };
 });
-};
 
 function updateScreen(){
     let list = '<ul>'
@@ -46,12 +44,10 @@ document.getElementById('inputStyle').value = '';
 
 function deleteTask(element){
     let confirmation = window.confirm('Are you sure you want to delete this task?');
-
     if(confirmation){
     tasks = tasks.filter(task=>task.id!=element.getAttribute('id'));
     };
     addLocalStorage(tasks);
-
 };
 
 function cleanAll(){
@@ -64,7 +60,6 @@ function cleanAll(){
 
 function addLocalStorage(tasks){
     localStorage.setItem('tasks', JSON.stringify(tasks));
-
     updateScreen();
 };
 
